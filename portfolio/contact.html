@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--Erick Diaz contact.html 06/24/2022-->
+<html lang="en">
+
+    <head>
+
+        <title>Contact &#9475; Erick's Portfolio</title>
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Tiro+Devanagari+Marathi&family=Work+Sans&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div id="container">
+
+            <header>
+
+                <p>Erick Diaz</p>
+
+                <figure>
+
+                    <img class="erick" src="images/erick.jpg" alt="Picture of Erick Diaz">
+
+                    <figcaption class="tagline">Debugging my life one line at a time</figcaption>
+                
+                </figure>
+
+            </header>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <!--The main element section is where you add the main content of the webpage-->
+            <main>  
+
+                <div class="mobile">
+
+                    <ul>
+
+                        <li>Email: <a class="links" href="mailto:ediaz008@my.wilmu.edu">ediaz008@my.wilmu.edu</a></li>
+                        <li>Phone: <a class="links" href="tel+19999999999">999-999-9999</a></li>
+
+                    </ul>
+                
+                </div>
+
+                <div class="tablet-desktop">
+
+                    <ul>
+
+                        <li>Email: <a class="links" href="mailto:ediaz008@my.wilmu.edu">ediaz008@my.wilmu.edu</a></li>
+                        <li>Phone: <span class="links">999-999-9999</span></li>
+
+                    </ul>
+
+                </div>
+
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.517856682276!2d-75.58837138436706!3d39.68305900785436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c703b029435bd7%3A0x69caf90a30303dee!2s320%20N%20Dupont%20Hwy%2C%20New%20Castle%2C%20DE%2019720!5e0!3m2!1sen!2sus!4v1653646459486!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div id="form">
+
+                    <h3>Complete the form below to let me know what you think about this website!</h3>
+                    
+                    <form action="mailto:ediaz008@my.wilmu.edu" method="post">
+
+                        <fieldset>
+
+                            <legend>Reviewer Info</legend>
+
+                            <label for="fName">First Name:</label>
+                            <input type="text" name="fName" id="fName" required>
+
+                            <label for="lName">Last Name:</label>
+                            <input type="text" name="lName" id="lName" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" required>
+
+                        </fieldset>
+
+                        <fieldset>
+
+                            <legend>Which pages did you like the most?</legend>
+
+                            <label for="index"><input type="checkbox" name="favorite" id="index" value="Home">Home</label>
+
+                            <label for="resume"><input type="checkbox" name="favorite" id="resume" value="Resume">Resume</label>
+
+                            <label for="testimonials"><input type="checkbox" name="favorite" id="testimonials" value="Testimonials">Testimonials</label>
+
+                            <label for="contact"><input type="checkbox" name="favorite" id="contact" value="Contact">Contact</label>
+
+                        </fieldset>
+
+                        <fieldset>
+
+                            <legend>How would you rate the website?</legend>
+
+                            <label for="rating">Rating fromt 1 to 5 (1 being bad and 5 being amazing)</label>
+
+                            <select name="rating" id="rating">
+
+                                <option value="5">5</option>
+                                <option value="4">4</option>
+                                <option value="3">3</option>
+                                <option value="2">2</option>
+                                <option value="1">1</option>
+
+                            </select>
+
+                            <label for="review">Other concerns</label>
+
+                            <textarea id="review" name="review" rows="10" cols="25"></textarea>
+
+                        </fieldset>
+
+                        <input type="submit" id="submit" value="Submit" class="button">
+
+                    </form>
+
+                </div>
+            
+            </main>
+
+            <footer>
+                <a class="links" href="mailto:ediaz008@my.wilmu.edu">ediaz008@my.wilmu.edu</a>
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,391 @@
+/* Erick Diaz 06/24/2022 styles.css */
+
+/* This rule is used to reset the browsers default stylesheet so that our website has a consistent look across all browsers */
+body, header, nav, main, footer, h1, h2, div, img, p, ul, li, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* Style rules for mobile viewport */
+
+/* This is where the header style rules start */
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    height: 365px;
+    text-align: center;
+    font-family: 'Tiro Devanagari Marathi', serif;
+    font-weight: bold;
+    color: #00B809;
+}
+
+header img {
+    margin: 0 auto;
+}
+
+header p {
+    font-size: 1.75em;
+    padding: 0.25em;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 1em;
+    padding: 0.25em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* This is where the nav style rules start */
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.75em;
+    font-family: 'Work Sans', sans-serif;
+    border-top: 1px solid #000;
+}
+
+nav li:first-child {
+    border-top: none;
+}
+
+nav li a {
+    display: block;
+    color: #007506;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* This is where the main style rules start */
+main {
+    font-family: 'Tiro Devanagari Marathi', serif;
+    font-size: 1em;
+    text-align: left;
+    margin: 2em 5em 2em 5em;
+}
+
+main ul {
+    padding: 1%;
+}
+
+main ul li {
+    padding: 1%;
+}
+
+#jobs dl {
+    padding: 1%;
+}
+
+#jobs dt {
+    padding: 1%;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#jobs dd {
+    font-size: 1.15em;
+    padding: 1%;
+}
+
+.action {
+    font-style: italic;
+    text-decoration: underline;
+    text-shadow: 5px 5px 8px #2e3033;
+}
+
+.map {
+    border: 2px solid #000;
+    width: 95%;
+}
+
+.grid {
+    padding: 1em;
+}
+
+.grid h1 {
+    text-decoration: underline;
+    text-align: center;
+    padding: 1em; 
+}
+
+.grid p {
+    padding: 0.5em;
+    font-size: 1.5em;
+}
+
+/* Style rules for form */
+
+#form {
+    margin-top: 2%;
+    background-color: #f2f2f2;
+    padding: 2%;
+}
+
+#form h3 {
+    text-align: center;
+}
+
+/* Style rules for form elements */
+
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+}
+
+fieldset, legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #000;
+    color: #00B809;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+form #submit:hover {
+    color: #fff;
+    background-color: #007506;
+}
+
+/*This is where the footer style rules start */
+footer {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.85em;
+    margin: 1em 2em 1em 2em;
+    color: #007506;
+}
+
+.links {
+    background-color: #000;
+    margin: 0 auto;
+    width: 80%;
+    padding: 0.25%;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #00B809;
+}
+
+/* Media query for tablet viewport */
+
+@media screen and (min-width: 630px), print {
+
+    /* This shows the tablet-desktop class and hides mobile class */
+
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet viewport header styles */
+    header {
+        position: static;
+        padding-bottom: 2%;
+    }
+
+    /* Tablet viewport nav styles */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #000;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.1em 0.75em;
+    }
+
+    /* Tablet viewport main styles */
+    main ul {
+        margin: 0 0 4% 10%;
+    }
+
+    main dl {
+        margin:  0 0 4% 10%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+        padding: 1em;
+    }
+
+    .grid h1 {
+        grid-column: 1 / span 3;
+        text-align: center;
+        text-decoration: underline;
+        padding: 1em;
+    }
+
+    .grid p {
+        padding: 0.5em;
+        font-size: 1.5em;
+    }
+
+    /* Tablet Viewport: Style rule for form element */
+
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* Tablet Viewport: Style rules for table */
+
+    table {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+
+    th, td {
+        border: 1px solid #000;
+        padding: 2%;
+        text-align: center;
+    }
+
+    th {
+        background-color: #000;
+        color: #fff;
+        font-size: 1.15em;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ccc;
+    }
+    
+}
+
+/* Media query for desktop viewport */
+
+@media screen and (min-width: 769px), print {
+
+    /* Desktop viewport header styles */
+    header {
+        width: 25%;
+        float: right;
+        padding-bottom: 0;
+        background-color: #fff;
+    }
+
+    /* Desktop viewport nav styles */
+    nav {
+        float: left;
+        width:  70%;
+        margin: 4em 0 1em 0;
+    }
+
+    nav ul {
+        text-align: left;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav li a {
+        padding: 0.5em;
+    }
+
+    nav li a:hover {
+        color: #fff;
+        background-color: #007506;
+    }
+
+    /* Desktop viewport main styles */
+    main {
+        clear: both;
+    }
+
+    ul a:hover {
+        color: #fff;
+        background-color: #007506;
+    }
+
+    /* Desktop Viewport: Style Rules for form elements */
+
+    form {
+        width: auto;
+    }
+    
+}
+
+/* Media query for large desktop viewports */
+@media screen and (min-width: 1921px) {
+
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+
+    /* Large Desktop Viewport: Style rules for table */
+
+    table {
+        width: 80%;
+    }
+    
+}
+
+/* Media query for print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
